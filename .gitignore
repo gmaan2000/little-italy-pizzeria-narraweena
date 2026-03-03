@@ -1,0 +1,20 @@
+# Build output
+dist/
+node_modules/
+
+# Agent tooling - keep out of repo
+.agent/
+.tmp/
+tools/
+architecture/
+docs/
+gemini.md
+task_plan.md
+findings.md
+progress.md
+test-error.html
+
+# Local env
+.env
+.env.local
+.DS_Store

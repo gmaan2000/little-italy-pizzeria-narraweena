@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #C41E3A;
+    --secondary: #2D3E33;
+    --background: #F9F7F2;
+    --accent: #E6A15C;
+    --text-dark: #0A0A0A;
+  }
+
+  body {
+    @apply font-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .floating-island {
+    @apply fixed top-6 left-1/2 -translate-x-1/2 z-40 px-6 py-3 rounded-full border border-secondary/10 bg-background/60 backdrop-blur-xl transition-all duration-500;
+  }
+
+  .btn-magnetic {
+    @apply relative overflow-hidden inline-flex items-center justify-center px-8 py-3 rounded-full transition-transform duration-300 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] hover:scale-105;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white;
+  }
+
+  .card-rustic {
+    @apply bg-white p-8 rounded-2xl border border-secondary/5 shadow-sm hover:shadow-md transition-all duration-300;
+  }
+}
+
+/* Noise overlay is handled in index.html SVG */
+
+.perspective-1000 {
+  perspective: 1000px;
+}
