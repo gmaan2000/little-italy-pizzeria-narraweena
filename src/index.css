@@ -115,6 +115,20 @@
   .announcement-bar {
     @apply bg-charcoal text-white/80 text-xs font-body tracking-wider py-2 px-4 text-center;
   }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
 }
 
 /* Scrollbar styling */
