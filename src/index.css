@@ -1,50 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Sacramento&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --primary: #C41E3A;
-    --secondary: #2D3E33;
-    --background: #F9F7F2;
-    --accent: #E6A15C;
-    --text-dark: #0A0A0A;
+    --primary: #E53E17;
+    --primary-dark: #C4310F;
+    --primary-light: #FF6B3D;
+    --gold: #D4A843;
+    --green: #2D7A3A;
+    --charcoal: #1A1A1A;
+    --cream: #F9F7F2;
+    --cream-dark: #F0EBE3;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
-    @apply font-serif;
+    @apply font-body bg-cream text-text-dark antialiased overflow-x-hidden;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
-    letter-spacing: -0.02em;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading uppercase tracking-wide;
+  }
+
+  h1 {
+    @apply text-5xl md:text-7xl lg:text-8xl font-normal;
+  }
+
+  h2 {
+    @apply text-4xl md:text-6xl font-normal;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-normal;
   }
 }
 
 @layer components {
-  .floating-island {
-    @apply fixed top-6 left-1/2 -translate-x-1/2 z-40 px-6 py-3 rounded-full border border-secondary/10 bg-background/60 backdrop-blur-xl transition-all duration-500;
-  }
 
-  .btn-magnetic {
-    @apply relative overflow-hidden inline-flex items-center justify-center px-8 py-3 rounded-full transition-transform duration-300 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] hover:scale-105;
-  }
-
+  /* Primary CTA Button — Marcello style */
   .btn-primary {
-    @apply bg-primary text-white;
+    @apply inline-flex items-center justify-center gap-2 px-10 py-4 bg-primary text-white font-heading uppercase tracking-[0.15em] text-base rounded-full transition-all duration-300 hover:bg-primary-dark hover:scale-105 hover:shadow-lg hover:shadow-primary/30 active:scale-95;
   }
 
+  /* Secondary / Outline Button */
   .btn-secondary {
-    @apply bg-secondary text-white;
+    @apply inline-flex items-center justify-center gap-2 px-10 py-4 border-2 border-primary text-primary font-heading uppercase tracking-[0.15em] text-base rounded-full transition-all duration-300 hover:bg-primary hover:text-white hover:scale-105 active:scale-95;
   }
 
-  .card-rustic {
-    @apply bg-white p-8 rounded-2xl border border-secondary/5 shadow-sm hover:shadow-md transition-all duration-300;
+  /* Dark button for light backgrounds */
+  .btn-dark {
+    @apply inline-flex items-center justify-center gap-2 px-10 py-4 bg-charcoal text-white font-heading uppercase tracking-[0.15em] text-base rounded-full transition-all duration-300 hover:bg-text-dark hover:scale-105 active:scale-95;
+  }
+
+  /* Section containers */
+  .section {
+    @apply py-20 md:py-32 px-4 md:px-8;
+  }
+
+  .section-cream {
+    @apply section bg-cream;
+  }
+
+  .section-dark {
+    @apply section bg-charcoal text-white;
+  }
+
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Decorative separator — Marcello style thin line */
+  .divider-primary {
+    @apply w-20 h-[2px] bg-primary mx-auto my-6;
+  }
+
+  .divider-gold {
+    @apply w-20 h-[2px] bg-gold mx-auto my-6;
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  /* Script subheading — Marcello's elegant script labels */
+  .script-label {
+    @apply font-accent text-3xl md:text-4xl text-primary;
+  }
+
+  /* Bold condensed section title */
+  .section-title {
+    @apply font-heading text-4xl md:text-6xl lg:text-7xl uppercase tracking-wider text-primary;
+  }
+
+  /* Marcello-style announcement bar */
+  .announcement-bar {
+    @apply bg-charcoal text-white/80 text-xs font-body tracking-wider py-2 px-4 text-center;
   }
 }
 
-/* Noise overlay is handled in index.html SVG */
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
 
-.perspective-1000 {
-  perspective: 1000px;
+::-webkit-scrollbar-track {
+  @apply bg-cream;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/40 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary/60;
 }

@@ -1,0 +1,35 @@
+{
+    "id": "narraweena",
+    "name": "Narraweena",
+    "tagline": "Takeaway & Delivery",
+    "type": "takeaway",
+    "address": "54A May Road, Narraweena NSW 2099",
+    "phone": "(02) 9982 7777",
+    "googleMapsUrl": "https://maps.google.com/?q=Little+Italy+Pizzeria+Narraweena+54A+May+Road+Narraweena",
+    "googleMapsEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.211747635232!2d151.2754393!3d-33.7551937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12abec6dcc5ed1%3A0x1e800be839b59667!2sLITTLE%20ITALY%20NARRAWEENA!5e0!3m2!1sen!2sau!4v1772444775538!5m2!1sen!2sau",
+    "uberEatsUrl": "https://www.ubereats.com/au/store/little-italy-pizzeria-narraweena/",
+    "hours": {
+        "monday": "4:00 PM – 9:00 PM",
+        "tuesday": "4:00 PM – 9:00 PM",
+        "wednesday": "4:00 PM – 9:00 PM",
+        "thursday": "4:00 PM – 9:00 PM",
+        "friday": "4:00 PM – 9:00 PM",
+        "saturday": "4:00 PM – 9:00 PM",
+        "sunday": "4:00 PM – 9:00 PM"
+    },
+    "features": [
+        "takeaway",
+        "delivery",
+        "uber-eats"
+    ],
+    "heroImage": "/assets/hero-narraweena.png",
+    "heroVideo": "/assets/hero-narraweena.mp4",
+    "cardImage": "/assets/hero-guy-narraweena.png",
+    "theme": {
+        "color": "#4A6128",
+        "colorDark": "#2E3D18",
+        "colorLight": "#6B8A3A",
+        "label": "olive"
+    },
+    "description": "Our original Northern Beaches home. Quick, authentic Italian takeaway — call ahead or order online for pickup and delivery."
+}

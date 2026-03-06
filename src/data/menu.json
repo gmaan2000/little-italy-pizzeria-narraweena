@@ -1,0 +1,238 @@
+{
+    "categories": [
+        {
+            "name": "Pizzas",
+            "items": [
+                {
+                    "name": "Margherita",
+                    "description": "San Marzano tomato, fior di latte, fresh basil",
+                    "price": 18,
+                    "image": "/assets/menu-margherita.png"
+                },
+                {
+                    "name": "Pepperoni",
+                    "description": "San Marzano tomato, fior di latte, pepperoni",
+                    "price": 22,
+                    "image": "/assets/menu-pepperoni.png"
+                },
+                {
+                    "name": "Prosciutto e Funghi",
+                    "description": "San Marzano tomato, fior di latte, prosciutto, mushrooms",
+                    "price": 24,
+                    "image": "/assets/menu-margherita.png"
+                },
+                {
+                    "name": "Quattro Formaggi",
+                    "description": "Fior di latte, gorgonzola, parmigiano, provolone",
+                    "price": 24,
+                    "image": "/assets/menu-margherita.png"
+                },
+                {
+                    "name": "Diavola",
+                    "description": "San Marzano tomato, fior di latte, spicy salami, chilli",
+                    "price": 23,
+                    "image": "/assets/menu-pepperoni.png"
+                },
+                {
+                    "name": "Capricciosa",
+                    "description": "San Marzano tomato, fior di latte, ham, mushrooms, olives, artichokes",
+                    "price": 25,
+                    "image": "/assets/menu-margherita.png"
+                },
+                {
+                    "name": "Vegetariana",
+                    "description": "San Marzano tomato, fior di latte, grilled vegetables, olives",
+                    "price": 22,
+                    "image": "/assets/menu-margherita.png"
+                },
+                {
+                    "name": "Hawaiana",
+                    "description": "San Marzano tomato, fior di latte, ham, pineapple",
+                    "price": 22,
+                    "image": "/assets/menu-margherita.png"
+                },
+                {
+                    "name": "Meat Lovers",
+                    "description": "San Marzano tomato, fior di latte, pepperoni, ham, sausage, bacon",
+                    "price": 26,
+                    "image": "/assets/menu-pepperoni.png"
+                },
+                {
+                    "name": "BBQ Chicken",
+                    "description": "BBQ sauce, fior di latte, chicken, red onion, capsicum",
+                    "price": 25,
+                    "image": "/assets/menu-pepperoni.png"
+                }
+            ]
+        },
+        {
+            "name": "Pastas",
+            "items": [
+                {
+                    "name": "Spaghetti Bolognese",
+                    "description": "Slow-cooked beef ragu, parmigiano",
+                    "price": 22,
+                    "image": "/assets/menu-bolognese.png"
+                },
+                {
+                    "name": "Penne Arrabbiata",
+                    "description": "Spicy tomato sauce, garlic, chilli flakes, basil",
+                    "price": 20,
+                    "image": "/assets/menu-bolognese.png"
+                },
+                {
+                    "name": "Fettuccine Carbonara",
+                    "description": "Pancetta, egg yolk, parmigiano, black pepper",
+                    "price": 24,
+                    "image": "/assets/menu-carbonara.png"
+                },
+                {
+                    "name": "Boscaiola",
+                    "description": "Mushrooms, pancetta, cream sauce, parmigiano",
+                    "price": 24,
+                    "image": "/assets/menu-carbonara.png"
+                },
+                {
+                    "name": "Penne Chicken",
+                    "description": "Grilled chicken, sun-dried tomato, spinach, cream",
+                    "price": 24,
+                    "image": "/assets/menu-carbonara.png"
+                },
+                {
+                    "name": "Spaghetti Marinara",
+                    "description": "Prawns, calamari, mussels, napoli sauce",
+                    "price": 26,
+                    "image": "/assets/menu-bolognese.png"
+                }
+            ]
+        },
+        {
+            "name": "Salads",
+            "items": [
+                {
+                    "name": "Caesar Salad",
+                    "description": "Cos lettuce, croutons, pancetta, parmigiano, Caesar dressing",
+                    "price": 16,
+                    "image": "/assets/menu-caprese.png"
+                },
+                {
+                    "name": "Caprese",
+                    "description": "Buffalo mozzarella, vine tomatoes, basil, balsamic glaze",
+                    "price": 18,
+                    "image": "/assets/menu-caprese.png"
+                },
+                {
+                    "name": "Garden Salad",
+                    "description": "Mixed leaves, cherry tomatoes, cucumber, red onion",
+                    "price": 12,
+                    "image": "/assets/menu-caprese.png"
+                }
+            ]
+        },
+        {
+            "name": "Sides",
+            "items": [
+                {
+                    "name": "Garlic Bread",
+                    "description": "Traditional Italian garlic bread",
+                    "price": 8,
+                    "image": "/assets/menu-bruschetta.png"
+                },
+                {
+                    "name": "Cheesy Garlic Bread",
+                    "description": "Garlic bread with melted mozzarella",
+                    "price": 10,
+                    "image": "/assets/menu-bruschetta.png"
+                },
+                {
+                    "name": "Arancini",
+                    "description": "Fried risotto balls with napoli dipping sauce",
+                    "price": 12,
+                    "image": "/assets/menu-bruschetta.png"
+                },
+                {
+                    "name": "Bruschetta",
+                    "description": "Toasted ciabatta, diced tomato, basil, garlic, balsamic",
+                    "price": 14,
+                    "image": "/assets/menu-bruschetta.png"
+                }
+            ]
+        }
+    ],
+    "barMenu": {
+        "available": [
+            "manly"
+        ],
+        "categories": [
+            {
+                "name": "Wine",
+                "items": [
+                    {
+                        "name": "House Red",
+                        "description": "Italian Sangiovese",
+                        "price": 10,
+                        "image": "/assets/menu-aperol-spritz.png"
+                    },
+                    {
+                        "name": "House White",
+                        "description": "Pinot Grigio",
+                        "price": 10,
+                        "image": "/assets/menu-aperol-spritz.png"
+                    },
+                    {
+                        "name": "Prosecco",
+                        "description": "By the glass",
+                        "price": 12,
+                        "image": "/assets/menu-aperol-spritz.png"
+                    }
+                ]
+            },
+            {
+                "name": "Beer",
+                "items": [
+                    {
+                        "name": "Peroni Nastro Azzurro",
+                        "description": "330ml",
+                        "price": 9,
+                        "image": "/assets/menu-aperol-spritz.png"
+                    },
+                    {
+                        "name": "Moretti",
+                        "description": "330ml",
+                        "price": 9,
+                        "image": "/assets/menu-aperol-spritz.png"
+                    },
+                    {
+                        "name": "Local Craft",
+                        "description": "Ask staff for selection",
+                        "price": 10,
+                        "image": "/assets/menu-aperol-spritz.png"
+                    }
+                ]
+            },
+            {
+                "name": "Cocktails",
+                "items": [
+                    {
+                        "name": "Aperol Spritz",
+                        "description": "Aperol, prosecco, soda",
+                        "price": 16,
+                        "image": "/assets/menu-aperol-spritz.png"
+                    },
+                    {
+                        "name": "Negroni",
+                        "description": "Gin, campari, sweet vermouth",
+                        "price": 18,
+                        "image": "/assets/menu-aperol-spritz.png"
+                    },
+                    {
+                        "name": "Espresso Martini",
+                        "description": "Vodka, espresso, coffee liqueur",
+                        "price": 18,
+                        "image": "/assets/menu-aperol-spritz.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

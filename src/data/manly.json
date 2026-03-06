@@ -1,0 +1,39 @@
+{
+    "id": "manly",
+    "name": "Manly",
+    "tagline": "Dine-In, Takeaway & Bar",
+    "type": "dine-in",
+    "address": "2a Whistler St, Manly NSW 2095",
+    "phone": "(02) 9583 9089",
+    "googleMapsUrl": "https://maps.google.com/?q=2a+Whistler+St+Manly+NSW+2095",
+    "googleMapsEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.540541753126!2d151.28060969678955!3d-33.798361199999974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12abaacfb4a915%3A0x208903d91396dd23!2sLITTLE%20ITALY%20MANLY!5e0!3m2!1sen!2sau!4v1772698735014!5m2!1sen!2sau",
+    "uberEatsUrl": "https://www.ubereats.com/au/store/little-italy-pizzeria-manly/",
+    "hours": {
+        "monday": "4:30 PM – 9:30 PM",
+        "tuesday": "4:30 PM – 9:30 PM",
+        "wednesday": "4:30 PM – 9:30 PM",
+        "thursday": "4:30 PM – 9:30 PM",
+        "friday": "4:30 PM – 9:30 PM",
+        "saturday": "12:00 PM – 9:30 PM",
+        "sunday": "12:00 PM – 9:30 PM"
+    },
+    "features": [
+        "dine-in",
+        "takeaway",
+        "delivery",
+        "uber-eats",
+        "bar",
+        "reservations"
+    ],
+    "capacity": 40,
+    "heroImage": "/assets/hero-manly.png",
+    "heroVideo": "/assets/hero-manly.mp4",
+    "cardImage": "/assets/hero-manly.png",
+    "theme": {
+        "color": "#9A0F0F",
+        "colorDark": "#6B0808",
+        "colorLight": "#C41313",
+        "label": "crimson"
+    },
+    "description": "Our Manly beachside restaurant. Sit down, relax with a cocktail, and enjoy authentic Italian — inside or on the terrace."
+}
