@@ -99,21 +99,31 @@ export default function MenuSection() {
                 </div>
 
                 {/* Category Tabs — Marcello pill style */}
+                <style>{`
+                    .category-btn {
+                        background-color: white;
+                        color: #6b7280; /* text-muted */
+                        border-color: #E2DFD3; /* border-cream-dark */
+                    }
+                    .category-btn:hover {
+                        background-color: ${theme.color} !important;
+                        color: white !important;
+                        border-color: transparent !important;
+                    }
+                    .category-btn.active {
+                        background-color: ${theme.color} !important;
+                        color: white !important;
+                        box-shadow: 0 4px 15px ${theme.color}40 !important;
+                        border-color: transparent !important;
+                        transform: scale(1.05);
+                    }
+                `}</style>
                 <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-12">
                     {allCategories.map((cat, i) => (
                         <button
                             key={cat.name}
                             onClick={() => setActiveCategory(i)}
-                            className={`px-6 py-2.5 rounded-full font-heading text-sm tracking-[0.15em] uppercase transition-all duration-300 cursor-pointer ${activeCategory === i
-                                ? 'text-white shadow-lg scale-105'
-                                : 'bg-white text-text-muted border border-cream-dark hover:border-transparent hover:text-white'
-                                }`}
-                            style={activeCategory === i
-                                ? { backgroundColor: theme.color, boxShadow: `0 4px 15px ${theme.color}40` }
-                                : undefined
-                            }
-                            onMouseEnter={e => { if (activeCategory !== i) { e.currentTarget.style.backgroundColor = theme.color; e.currentTarget.style.color = 'white'; } }}
-                            onMouseLeave={e => { if (activeCategory !== i) { e.currentTarget.style.backgroundColor = ''; e.currentTarget.style.color = ''; } }}
+                            className={`category-btn px-6 py-2.5 rounded-full font-heading text-sm tracking-[0.15em] uppercase transition-all duration-300 cursor-pointer border ${activeCategory === i ? 'active' : ''}`}
                         >
                             {cat.name}
                         </button>
