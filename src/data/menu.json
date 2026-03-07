@@ -157,6 +157,35 @@
                     "image": "/assets/menu-bruschetta.png"
                 }
             ]
+        },
+        {
+            "name": "Desserts",
+            "items": [
+                {
+                    "name": "Tiramisu",
+                    "description": "Classic Italian dessert with espresso, mascarpone, and cocoa",
+                    "price": 14,
+                    "image": "/assets/menu-tiramisu.png"
+                },
+                {
+                    "name": "Cannoli",
+                    "description": "Crispy pastry shells filled with sweet ricotta and chocolate chips",
+                    "price": 12,
+                    "image": "/assets/menu-tiramisu.png"
+                },
+                {
+                    "name": "Panna Cotta",
+                    "description": "Vanilla bean panna cotta with mixed berry compote",
+                    "price": 12,
+                    "image": "/assets/menu-tiramisu.png"
+                },
+                {
+                    "name": "Nutella Pizza",
+                    "description": "Woodfired pizza base topped with Nutella and strawberries",
+                    "price": 18,
+                    "image": "/assets/menu-tiramisu.png"
+                }
+            ]
         }
     ],
     "barMenu": {
