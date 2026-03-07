@@ -97,7 +97,7 @@ export default function BranchSelector() {
                     <div className="hidden md:block absolute top-0 right-0 w-px h-full bg-gradient-to-b from-transparent via-gold/50 to-transparent z-10" />
 
                     {/* Logo watermark */}
-                    <img src="/assets/logo-modernized.png" alt="" className="absolute top-6 left-6 w-28 h-28 object-contain opacity-[0.10] pointer-events-none select-none -rotate-12 rounded-full mix-blend-screen z-10" />
+                    <img src="/assets/logo-modernized.png" alt="" className="absolute top-6 left-6 w-28 h-28 object-contain opacity-[0.10] pointer-events-none select-none -rotate-12 rounded-full mix-blend-screen z-10 transform-gpu will-change-transform" />
 
                     {/* Content */}
                     <div className="relative z-10 p-8 md:p-10">
@@ -147,7 +147,7 @@ export default function BranchSelector() {
                     />
 
                     {/* Logo watermark */}
-                    <img src="/assets/logo-modernized.png" alt="" className="absolute bottom-8 right-8 w-32 h-32 object-contain opacity-[0.10] pointer-events-none select-none rotate-6 rounded-full mix-blend-screen z-10" />
+                    <img src="/assets/logo-modernized.png" alt="" className="absolute bottom-8 right-8 w-32 h-32 object-contain opacity-[0.10] pointer-events-none select-none rotate-6 rounded-full mix-blend-screen z-10 transform-gpu will-change-transform" />
 
                     {/* Content */}
                     <div className="relative z-10 p-8 md:p-10">

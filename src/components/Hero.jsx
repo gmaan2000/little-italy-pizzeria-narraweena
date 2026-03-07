@@ -46,8 +46,24 @@ export default function Hero() {
     return (
         <section ref={heroRef} className="relative min-h-screen flex items-stretch overflow-hidden">
 
+            {/* Mobile background video */}
+            <div className="absolute inset-0 lg:hidden z-0">
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    poster={branch.heroImage}
+                    src={branch.heroVideo}
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: 'center 15%' }}
+                />
+                <div className="absolute inset-0" style={{ background: `linear-gradient(to bottom, rgba(249,247,242,0.50), rgba(249,247,242,0.60))` }} />
+            </div>
+
             {/* Left side — Text Content */}
-            <div className="relative z-10 w-full lg:w-1/2 flex items-center bg-cream px-6 md:px-12 lg:px-20 py-32">
+            <div className="relative z-10 w-full lg:w-1/2 flex items-center lg:bg-cream px-6 md:px-12 lg:px-20 py-32">
                 {/* Branch-colored ambient blobs */}
                 <div className="absolute top-20 right-0 w-64 h-64 rounded-full blur-3xl pointer-events-none opacity-20"
                     style={{ backgroundColor: theme.color }} />

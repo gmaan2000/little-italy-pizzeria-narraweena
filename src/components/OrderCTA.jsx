@@ -17,7 +17,7 @@ export default function OrderCTA() {
             <img
                 src="/assets/logo-modernized.png"
                 alt=""
-                className="absolute top-1/2 right-8 md:right-16 -translate-y-1/2 w-80 h-80 object-contain opacity-[0.06] pointer-events-none select-none rounded-full"
+                className="absolute top-1/2 right-8 md:right-16 -translate-y-1/2 w-80 h-80 object-contain opacity-[0.06] pointer-events-none select-none rounded-full transform-gpu will-change-transform"
             />
 
             {/* Corner ornaments */}
