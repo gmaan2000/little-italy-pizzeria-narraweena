@@ -8,6 +8,7 @@ export default function Hero() {
     const heroRef = useRef(null);
     const textRef = useRef(null);
     const mediaRef = useRef(null);
+    const videoRef = useRef(null);
 
     useEffect(() => {
         if (!textRef.current) return;
@@ -25,6 +26,17 @@ export default function Hero() {
                 '-=0.6'
             );
         }
+    }, [branch]);
+
+    useEffect(() => {
+        const video = videoRef.current;
+        if (!video) return;
+        const tryPlay = () => {
+            video.play().catch(() => {});
+        };
+        video.addEventListener('canplay', tryPlay);
+        if (video.readyState >= 3) tryPlay();
+        return () => video.removeEventListener('canplay', tryPlay);
     }, [branch]);
 
     if (!branch) return null;
@@ -112,16 +124,17 @@ export default function Hero() {
             {/* Right side — Video Panel */}
             <div ref={mediaRef} className="hidden lg:block w-1/2 relative overflow-hidden">
                 <video
+                    ref={videoRef}
                     autoPlay
                     muted
                     loop
                     playsInline
+                    preload="auto"
                     poster={branch.heroImage}
+                    src={branch.heroVideo}
                     className="w-full h-full object-cover"
                     style={{ objectPosition: 'center 15%' }}
-                >
-                    <source src={branch.heroVideo} type="video/mp4" />
-                </video>
+                />
 
                 {/* Veo watermark cover */}
                 <div className="absolute bottom-0 right-0 w-32 h-24 pointer-events-none z-10"
