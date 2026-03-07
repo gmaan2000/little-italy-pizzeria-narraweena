@@ -152,6 +152,10 @@ export default function Hero() {
                     style={{ objectPosition: 'center 15%' }}
                 />
 
+                {/* Cream overlay to soften video */}
+                <div className="absolute inset-0 pointer-events-none z-[1]"
+                    style={{ background: 'rgba(249,247,242,0.25)' }} />
+
                 {/* Veo watermark cover */}
                 <div className="absolute bottom-0 right-0 w-32 h-24 pointer-events-none z-10"
                     style={{ background: `linear-gradient(135deg, transparent 35%, ${theme.colorDark} 100%)` }} />
